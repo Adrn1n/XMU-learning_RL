@@ -125,7 +125,7 @@ Please read the instructions below carefully and follow them faithfully.
 
 Papers to be submitted to NeurIPS 2026 must be prepared according to the
 instructions presented here. Papers may only be up to {\bf nine} pages long, including figures. \textbf{Papers that exceed the page limit will not be reviewed (or in any other way considered) for presentation at the conference.}
-Additional pages \emph{containing acknowledgments, references, checklist, and optional technical appendices} do not count as content pages. 
+Additional pages \emph{containing acknowledgments, references, checklist, and optional technical appendices} do not count as content pages.
 
 
 The margins in 2026 are the same as those in previous years.
@@ -147,10 +147,10 @@ The style files for NeurIPS and other conference information are available on th
 The only supported style file for NeurIPS 2026 is \verb+neurips_2026.sty+, rewritten for \LaTeXe{}. \textbf{Previous style files for \LaTeX{} 2.09,  Microsoft Word, and RTF are no longer supported.}
 
 
-The \LaTeX{} style file contains three optional arguments: 
+The \LaTeX{} style file contains three optional arguments:
 \begin{itemize}
-\item \verb+final+, which creates a camera-ready copy, 
-\item \verb+preprint+, which creates a preprint for submission to, e.g., arXiv, \item \verb+nonatbib+, which will not load the \verb+natbib+ package for you in case of package clash.
+  \item \verb+final+, which creates a camera-ready copy,
+  \item \verb+preprint+, which creates a preprint for submission to, e.g., arXiv, \item \verb+nonatbib+, which will not load the \verb+natbib+ package for you in case of package clash.
 \end{itemize}
 
 
@@ -303,7 +303,7 @@ marks.\footnote{As in this example.}
 
 
 All artwork must be neat, clean, and legible. Lines should be dark enough for
- reproduction purposes. The figure number and caption always appear after the
+reproduction purposes. The figure number and caption always appear after the
 figure. Place one line space before the figure caption and one line space after
 the figure. The figure caption should be lower case (except for the first word and proper nouns); figures are numbered consecutively.
 
@@ -345,8 +345,8 @@ This package was used to typeset Table~\ref{sample-table}.
     \cmidrule(r){1-2}
     Name     & Description     & Size ($\mu$m) \\
     \midrule
-    Dendrite & Input terminal  & $\approx$100     \\
-    Axon     & Output terminal & $\approx$10      \\
+    Dendrite & Input terminal  & $\approx$100  \\
+    Axon     & Output terminal & $\approx$10   \\
     Soma     & Cell body       & up to $10^6$  \\
     \bottomrule
   \end{tabular}
@@ -378,33 +378,33 @@ achieve this.
 \begin{itemize}
 
 
-\item You should directly generate PDF files using \verb+pdflatex+.
+  \item You should directly generate PDF files using \verb+pdflatex+.
 
 
-\item You can check which fonts a PDF files uses.  In Acrobat Reader, select the
-  menu Files$>$Document Properties$>$Fonts and select Show All Fonts. You can
-  also use the program \verb+pdffonts+ which comes with \verb+xpdf+ and is
-  available out-of-the-box on most Linux machines.
+  \item You can check which fonts a PDF files uses.  In Acrobat Reader, select the
+        menu Files$>$Document Properties$>$Fonts and select Show All Fonts. You can
+        also use the program \verb+pdffonts+ which comes with \verb+xpdf+ and is
+        available out-of-the-box on most Linux machines.
 
 
-\item \verb+xfig+ ``patterned'' shapes are implemented with bitmap fonts.  Use
-  "solid" shapes instead.
+  \item \verb+xfig+ ``patterned'' shapes are implemented with bitmap fonts.  Use
+        "solid" shapes instead.
 
 
-\item The \verb+\bbold+ package almost always uses bitmap fonts.  You should use
-  the equivalent AMS Fonts:
-\begin{verbatim}
+  \item The \verb+\bbold+ package almost always uses bitmap fonts.  You should use
+        the equivalent AMS Fonts:
+        \begin{verbatim}
    \usepackage{amsfonts}
 \end{verbatim}
-followed by, e.g., \verb+\mathbb{R}+, \verb+\mathbb{N}+, or \verb+\mathbb{C}+
-for $\mathbb{R}$, $\mathbb{N}$ or $\mathbb{C}$.  You can also use the following
-workaround for reals, natural and complex:
-\begin{verbatim}
+        followed by, e.g., \verb+\mathbb{R}+, \verb+\mathbb{N}+, or \verb+\mathbb{C}+
+        for $\mathbb{R}$, $\mathbb{N}$ or $\mathbb{C}$.  You can also use the following
+        workaround for reals, natural and complex:
+        \begin{verbatim}
    \newcommand{\RR}{I\!\!R} %real numbers
    \newcommand{\Nat}{I\!\!N} %natural numbers
    \newcommand{\CC}{I\!\!\!\!C} %complex numbers
 \end{verbatim}
-Note that \verb+amsfonts+ is automatically loaded by the \verb+amssymb+ package.
+        Note that \verb+amsfonts+ is automatically loaded by the \verb+amssymb+ package.
 
 
 \end{itemize}
@@ -434,13 +434,13 @@ line. Please give LaTeX hyphenation hints using the \verb+\-+ command when
 necessary.
 
 \begin{ack}
-Use unnumbered first level headings for the acknowledgments. All acknowledgments
-go at the end of the paper before the list of references. Moreover, you are required to declare
-funding (financial activities supporting the submitted work) and competing interests (related financial activities outside the submitted work).
-More information about this disclosure can be found at: \url{https://neurips.cc/Conferences/2026/PaperInformation/FundingDisclosure}.
+  Use unnumbered first level headings for the acknowledgments. All acknowledgments
+  go at the end of the paper before the list of references. Moreover, you are required to declare
+  funding (financial activities supporting the submitted work) and competing interests (related financial activities outside the submitted work).
+  More information about this disclosure can be found at: \url{https://neurips.cc/Conferences/2026/PaperInformation/FundingDisclosure}.
 
 
-Do {\bf not} include this section in the anonymized submission, only in the final paper. You can use the \texttt{ack} environment provided in the style file to automatically hide this section in the anonymized submission.
+  Do {\bf not} include this section in the anonymized submission, only in the final paper. You can use the \texttt{ack} environment provided in the style file to automatically hide this section in the anonymized submission.
 \end{ack}
 
 \section*{References}
@@ -464,8 +464,8 @@ connectionist rule extraction. In G.\ Tesauro, D.S.\ Touretzky and T.K.\ Leen
 pp.\ 609--616. Cambridge, MA: MIT Press.
 
 
-[2] Bower, J.M.\ \& Beeman, D.\ (1995) {\it The Book of GENESIS: Exploring
-  Realistic Neural Models with the GEneral NEural SImulation System.}  New York:
+  [2] Bower, J.M.\ \& Beeman, D.\ (1995) {\it The Book of GENESIS: Exploring
+    Realistic Neural Models with the GEneral NEural SImulation System.}  New York:
 TELOS/Springer--Verlag.
 
 
@@ -480,9 +480,9 @@ hippocampal region CA3. {\it Journal of Neuroscience} {\bf 15}(7):5249-5262.
 \appendix
 
 \section{Technical appendices and supplementary material}
-Technical appendices with additional results, figures, graphs, and proofs may be submitted with the paper submission before the full submission deadline (see above). You can upload a ZIP file for videos or code, but do not upload a separate PDF file for the appendix. There is no page limit for the technical appendices. 
+Technical appendices with additional results, figures, graphs, and proofs may be submitted with the paper submission before the full submission deadline (see above). You can upload a ZIP file for videos or code, but do not upload a separate PDF file for the appendix. There is no page limit for the technical appendices.
 
-Note: Think of the appendix as ``optional reading'' for reviewers. The paper must be able to stand alone without the appendix; for example, adding critical experiments that support the main claims to an appendix is inappropriate. 
+Note: Think of the appendix as ``optional reading'' for reviewers. The paper must be able to stand alone without the appendix; for example, adding critical experiments that support the main claims to an appendix is inappropriate.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
