@@ -39,7 +39,7 @@
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdf",
-                "-xelatex",
+                "-pdflatex=pdflatex",
                 "-shell-escape",
                 "-8bit",
                 "-output-directory=%OUTDIR%",
@@ -56,7 +56,7 @@
     ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "XeLaTeX (latexmk)",
+            "name": "PDFLaTeX (latexmk)",
             "tools": [
                 "latexmk"
             ]
@@ -127,4 +127,5 @@
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.recipe.default": "PDFLaTeX (latexmk)",
 }
